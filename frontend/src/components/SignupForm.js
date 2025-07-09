@@ -76,7 +76,7 @@ const SignupForm = () => {
 
   return (
     <div className="signup-container">
-      <h2>Create an Account</h2>
+      <h2 className="signup-title">Create an Account</h2>
       
       {message && <div className="success-message">{message}</div>}
       {error && <div className="error-message">{error}</div>}
@@ -130,7 +130,9 @@ const SignupForm = () => {
           />
         </div>
         
-        <button type="submit" className="submit-btn">Sign Up</button>
+        <button type="submit" className="submit-btn">
+          Sign Up
+        </button>
       </form>
     </div>
   );

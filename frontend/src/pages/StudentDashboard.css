@@ -1,0 +1,86 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.info-card, .courses-card, .announcements-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.student-info p strong {
+  font-weight: 600;
+}
+
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.courses-table th {
+  background-color: #f3f4f6;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.courses-table td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.announcements-section {
+  margin-top: 1.5rem;
+}
+
+.announcement {
+  padding: 1rem;
+  background-color: #ebf5ff;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.announcement-title {
+  font-weight: 600;
+}
+
+.announcement-date {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.announcement-content {
+  margin-top: 0.5rem;
+}
