@@ -23,3 +23,11 @@ class UserSerializer(serializers.ModelSerializer):
         user.set_password(validated_data['password'])
         user.save()
         return user
+
+class UserListSerializer(serializers.ModelSerializer):
+    date_joined = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
+    
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'email', 'date_joined', 'is_active')
+        read_only_fields = fields
